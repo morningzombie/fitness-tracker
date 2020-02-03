@@ -11,16 +11,16 @@ import More from './components/More';
 
 
 const goCardio = () => {
-  window.location.href = "#view=Cardio"
+  window.location.href = "#view=cardio"
 }
 const goStrength = () => {
-  window.location.href = "#view=Strength"
+  window.location.href = "#view=strength"
 }
 const goStretch = () => {
-  window.location.href = "#view=Stretch"
+  window.location.href = "#view=stretch"
 }
 const goMore = () => {
-  window.location.href = "#view=More"
+  window.location.href = "#view=more"
 }
 
 
@@ -54,9 +54,6 @@ function App() {
       {params.view === "strength" ? <Strength /> : null}
       {params.view === "stretch" ? <Stretch /> : null}
       {params.view === "more" ? <More /> : null}
-
-
-
     </div>
   );
 }
